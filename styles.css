@@ -478,8 +478,6 @@ footer p {
     body {
         background-image: url('../images/1TNERF.png');
         background-size: cover; /* Ensures the image is smaller and fits inside the container */
-        background-position: center; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents image repetition */
     }
 
     /* Hero Section */
