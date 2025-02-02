@@ -468,14 +468,13 @@ footer p {
     color: white; /* Change text color to white */
 }
 
-@media only screen and (max-width: 768px) {
-    body {
-        background-image: url('New.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: scroll; /* Fix mobile issue */
-    }
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  background-image: url('New.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll; /* Fix mobile issue */
 }
 
 /* Mobile Styles */
