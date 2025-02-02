@@ -1,9 +1,10 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('../images/1TNERFCopy.png');
+    background-image: url('../images/1TNERFCopy.png?v=2');    
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
     color: #fff;
     line-height: 1.6;
     margin: 0;
@@ -467,20 +468,20 @@ footer p {
     color: white; /* Change text color to white */
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        background-image: url('../images/1TNERFCopy.png?v=2');        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll; /* Fix mobile issue */
+    }
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 768px) {
     /* Hide the header on mobile */
     header {
         display: none;
-    }
-
-    /* Adjust body background for mobile */
-    body {
-        background-image: url('../images/1TNERFCopy.png'); /* Same image for mobile */
-        background-size: cover; /* Ensure the image covers the whole area */
-        background-position: center center; /* Center the image */
-        background-repeat: no-repeat; /* Prevent repeating */
-        background-attachment: fixed; /* Keeps the background fixed during scrolling */
     }
 
     /* Hero Section */
