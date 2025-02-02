@@ -476,7 +476,7 @@ footer p {
 
     /* Adjust body background for mobile */
     body {
-        background-image: url('../images/1TNERF.png'); /* Same image for mobile */
+        background-image: url('../images/1TNERFCopy.png'); /* Same image for mobile */
         background-size: cover; /* Ensure the image covers the whole area */
         background-position: center center; /* Center the image */
         background-repeat: no-repeat; /* Prevent repeating */
