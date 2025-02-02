@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet Our Entire Team</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html#intro" class="logo">TNERF</a>
+        <nav>
+            <a href="index.html#intro">Home</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#statistics">Statistics</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#team">Our Team</a>
+            <a href="index.html#events">Events</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="donate-btn">
+            <a href="https://donate.stripe.com/eVa7vp5Vr6un7a8aEE" target="_blank" style="text-decoration: none; color: inherit;">Donate</a>
+        </button>
+    </header>
+
+    <section id="full-team">
+        <h2>Meet Our Entire Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/NA">
+                <h3>Angella Huang</h3>
+                <p>Human Resources Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="images/NA">
+                <h3>Brayden Ho</h3>
+                <p>Communications Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="images/NA">
+                <h3>Katie Ngo</h3>
+                <p>Finanec Manager</p>
+            </div>
+            <!-- Add more team members in rows of 3 -->
+            <div class="team-member">
+                <img src="images/member4.png">
+                <h3>Carter Sirivongsa</h3>
+                <p>Recruitmnent Executive</p>
+            </div>
+            <div class="team-member">
+                <img src="images/member5.png">
+                <h3>Marilyn Duong</h3>
+                <p>Program Manager</p>
+            </div>
+            <div class="team-member">
+                <img src="images/member6.png">
+                <h3>Lalia Robinson</h3>
+                <p>Community Outreach Coordinator</p>
+            </div>
+            <div class="team-member">
+                <img src="images/member6.png">
+                <h3>Matthew Luong</h3>
+                <p>Public Relations Coordinator</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 True Nature Environmental Restoration Foundation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            if (window.innerWidth <= 768) {
+                document.querySelector('#full-team h2').textContent = "Meet Our Team";
+            }
+        });
+    </script>
+
+</body>
+</html>
