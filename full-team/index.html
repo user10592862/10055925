@@ -13,6 +13,14 @@
     height: 250px; /* Set a fixed height for the images, making them square */
     object-fit: cover; /* Ensure the images are cropped to fit the square size without distortion */
 }
+
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .team-member img {
+                width: 200px; /* Scale down the images on mobile */
+                height: 200px;
+            }
+        }
 </style>
 
 <body>
