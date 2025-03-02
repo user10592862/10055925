@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('New.jpg');    
+    background-image: url('New.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body::before {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Black transparency overlay */
-    z-index: -1;
+    z-index: -1; /* Place it behind the content */
 }
 
 /* Header Styles */
@@ -470,11 +470,18 @@ footer p {
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
-  background-image: url('New.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll; /* Fix mobile issue */
+    body {
+        background-image: url('images/Background.png'); /* Mobile-specific background */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll; /* Fix mobile issue */
+    }
+
+    #intro {
+        height: 100vh; /* Ensure the hero section covers the full viewport */
+        padding-top: 50px; /* Adjust if needed */
+    }
 }
 
 /* Mobile Styles */
@@ -575,31 +582,31 @@ footer p {
         }
     }
 
-    /* Mobile Version */
-    @media screen and (max-width: 767px) {
-        .projects-container {
-            display: grid;
-            grid-template-columns: 1fr; /* 1 column per row on mobile */
-            gap: 1rem; /* Space between the cards */
-            padding: 0 15px; /* Add padding to the container for better spacing */
-        }
-
-        .project-card {
-            width: 100%; /* Full width for mobile */
-            max-width: 450px; /* Adjust the card width to be smaller */
-            margin: 0 auto; /* Center the project cards */
-            padding: 1.5rem; /* Add padding inside the card */
-            box-sizing: border-box; /* Ensure padding is included in the width */
-        }
-
-        .project-card h3 {
-            font-size: 1.5rem;
-        }
-
-        .project-card p {
-            font-size: 1.2rem;
-        }
+/* Mobile-specific styles */
+@media screen and (max-width: 767px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 column per row on mobile */
+        gap: 1rem; /* Space between the cards */
+        padding: 0 15px; /* Add padding to the container for better spacing */
     }
+
+    .project-card {
+        width: 100%; /* Full width for mobile */
+        max-width: 100%; /* Ensure it fits within the container */
+        margin: 0 auto; /* Center the project cards */
+        padding: 1.5rem; /* Add padding inside the card */
+        box-sizing: border-box; /* Ensure padding is included in the width */
+    }
+
+    .project-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-card p {
+        font-size: 1.2rem;
+    }
+}
 
     #projects h2 {
         font-size: 2.2rem; /* Updated font size */
