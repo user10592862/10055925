@@ -44,32 +44,31 @@
             text-decoration: none;
         }
 
-        /* Team Section Styles */
-        #full-team {
-            padding: 50px 20px;
-            text-align: center;
-        }
+/* Team Section Styles */
+#full-team {
+    padding: 50px 20px;
+    text-align: center;
+}
 
-        .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+.team-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .team-member {
-            text-align: center;
-            max-width: 250px; /* Adjust as needed */
-        }
+.team-member {
+    text-align: center;
+    max-width: 250px; /* Adjust as needed */
+}
 
-        .team-member img {
-            width: 100%; /* Make all images fill the container */
-            height: 250px; /* Set a fixed height */
-            object-fit: cover; /* Ensures images fit without distortion */
-            border-radius: 10px; /* Optional: rounded corners */
-        }
+.team-member img {
+    width: 100%; /* Make all images fill the container */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensures images fit without distortion */
+    border-radius: 10px; /* Optional: rounded corners */
+}
 
         footer {
             text-align: center;
@@ -101,13 +100,13 @@
     <header>
         <a href="index.html#intro" class="logo">TNERF</a>
         <nav>
-            <a href="#intro">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#statistics">Statistics</a>
-            <a href="#projects">Projects</a>
-            <a href="#team">Our Team</a>
-            <a href="#events">Events</a>
-            <a href="#contact">Contact</a>
+            <a href="/#intro">Home</a>
+            <a href="/#about">About Us</a>
+            <a href="/#statistics">Statistics</a>
+            <a href="/#projects">Projects</a>
+            <a href="/#team">Our Team</a>
+            <a href="/#events">Events</a>
+            <a href="/#contact">Contact</a>
         </nav>
         <button class="donate-btn">
             <a href="https://donate.stripe.com/eVa7vp5Vr6un7a8aEE" target="_blank" style="text-decoration: none; color: inherit;">Donate</a>
